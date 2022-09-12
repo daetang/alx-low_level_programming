@@ -4,7 +4,7 @@
  * main - print the string in the put function
  *
  * Description:size of data type
- * this programme prints the size of the various date type
+ * this programme prints "the size of the various date type
  * Return: 0
  * */
 int main(void)
