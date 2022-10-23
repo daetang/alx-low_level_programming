@@ -13,9 +13,11 @@ int main(void)
 
 	while (Lc <= 'z')
 	{
-		if ((Lc != 'q' || Lc != 'e') && (Lc <= 'z'))
+		if ((Lc != 'q' && Lc != 'e') && Lc <= 'z')
+		{
 			putchar(Lc);
-		Lc++;
+			Lc++;
+		}
 	}
 	putchar('\n');
 	return (0);
