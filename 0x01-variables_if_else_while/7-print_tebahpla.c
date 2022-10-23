@@ -1,10 +1,10 @@
 #include <stdio.h>
 /**
- * Main - entry point
+ * main - entry point
  *
  * Description: using the main function
  * this program prints "the lowercase of the alphabet in reverse
- * Return: always 0
+ * Return: always zero
  */
 
 int main(void)
