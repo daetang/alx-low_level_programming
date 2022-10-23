@@ -16,6 +16,7 @@ int main(void)
 		putchar(Lc);
 		Lc++;
 	}
+	putchar('\n')
 	return (0);
 }
 
