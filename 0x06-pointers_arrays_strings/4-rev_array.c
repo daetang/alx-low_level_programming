@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * reverse_arrau - reverses an array of integrs
+ * reverse_arrau - reverses an array of integers
  * @a: array
- * @n: number of elements of the array
+ * @n: i"number of elements of the array
  * Return: rev
  */
 
