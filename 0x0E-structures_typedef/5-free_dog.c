@@ -1,6 +1,5 @@
 #include <stdlib.h>
 #include "dog.h"
-#include <stdio.h>
 
 /**
  * free_dog - frees memory allocated for a struct dog
