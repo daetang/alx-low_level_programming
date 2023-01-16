@@ -1,38 +1,52 @@
-fndef DOG_STRUCTURE
+#ifndef DOG_H
 
-#define DOG_STRUCTURE
+#define DOG_H
 
 
 
-#include <stdio.h>
 
-#include <stdlib.h>
 
 /**
  *
- *  * struct dog - a basic structure definition of a dog
+ * * struct dog - a dog's basic info
  *
- *   * @name: pointer to a string
+ * * @name: First member
  *
- *    * @age: integer
+ * * @age: Second member
  *
- *     * @owner: pointer to a string
+ * * @owner: Third member
  *
- *      */
+ * *
+ *
+ * * Description: Longer description
+ *
+ * */
 
-
-
-typedef struct dog
+struct dog
 
 {
 
 		char *name;
 
-			float age;
+		float age;
 
-				char *owner;
+		char *owner;
 
-} dog_t;
+};
+
+
+
+
+
+/**
+ *
+ * * dog_t - typedef for struct dog
+ *
+ * */
+
+typedef struct dog dog_t;
+
+
 
 
 
@@ -44,6 +58,12 @@ dog_t *new_dog(char *name, float age, char *owner);
 
 void free_dog(dog_t *d);
 
+char *_strcpy(char *dest, char *src);
+
+int _strlen(char *s);
 
 
-#endif /* DOG_STRUCTURE */
+
+
+
+#endif

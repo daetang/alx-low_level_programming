@@ -1,4 +1,4 @@
-tructures, typedef
+# Structures, typedef
 
 The learning objectives of this project are:
 
@@ -66,4 +66,4 @@ The learning objectives of this project are:
 
 [5-free_dog.c](./5-free_dog.c) a function that frees dogs
 
-- Prototype: `void free_dog(dog_t *d);`
+- Prototype: `void free_dog(dog_t *d);``
