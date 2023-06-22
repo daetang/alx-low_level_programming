@@ -1,28 +1,27 @@
-#ifndef VARIADIC_FUNCTION
-#define VARIADIC_FUNCTION
-
-#include <stdio.h>
-#include <stdarg.h>
-int _putchar(char c);
-int sum_them_all(const unsigned int n, ...);
-void print_numbers(const char *separator, const unsigned int n, ...);
-void print_strings(const char *separator, const unsigned int n, ...);
-void print_char(va_list p);
-void print_integer(va_list p);
-void print_float(va_list p);
-void print_string(va_list p);
-void print_all(const char * const format, ...);
+#include "variadic_functions.h"
 
 /**
- * actions - data struct
- * @s: pointer to a string
- * @f: function pointer
+ * sum_them_all - returns the sum of all its parameters.
+ * @n: amount of the arguments.
+ *
+ * Return: sum of its parameters.
  */
-typedef struct actions
+int sum_them_all(const unsigned int n, ...)
 {
-	char *s;
-	void (*f)(va_list);
-} actions;
+	va_list valist;
+	unsigned int i;
+	int sum = 0;
 
-#endif /* VARIADIC_FUNCTION */
+	if (n == 0)
+		return (0);
+
+	va_start(valist, n);
+
+	for (i = 0; i < n; i++)
+		sum += va_arg(valist, int);
+
+	va_end(valist);
+
+	return (sum);
+}
 
